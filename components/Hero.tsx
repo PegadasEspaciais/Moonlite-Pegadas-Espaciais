@@ -33,7 +33,7 @@ export default function Hero() {
             ★ 20 Anos de Experiência Internacional ★
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-celestial-white leading-tight mb-6">
-            Onde a precisão da <span className="text-eternal-gold text-glow-gold">estética avançada</span> encontra a clareza do <span className="text-eternal-gold text-glow-gold">destino</span>.
+            Onde a precisão da estética<span className="text-eternal-gold text-glow-gold">avançada encontra a clareza</span> do destino<span className="text-eternal-gold text-glow-gold"></span>.
           </h1>
           <p className="text-celestial-white/70 text-lg mb-10 max-w-xl leading-relaxed">
             Marilene Augústa Sâmtós: lapidando a harmonia entre o corpo e o cosmos. Uma experiência exclusiva de cuidado físico e orientação mística com assinatura internacional.
