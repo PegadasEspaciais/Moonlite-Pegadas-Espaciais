@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui;
+  --font-serif: var(--font-cinzel), ui-serif, Georgia;
+
+  --color-deep-space: #050505;
+  --color-cosmic-blue: #0D1117;
+  --color-eternal-gold: #D4AF37;
+  --color-royal-wine: #4A0E0E;
+  --color-celestial-white: #E5E5E5;
+
+  --drop-shadow-gold: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+
+@layer base {
+  body {
+    @apply bg-deep-space text-celestial-white selection:bg-eternal-gold/30;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif uppercase tracking-[0.1em];
+  }
+}
+
+@layer utilities {
+  .glass-morphism {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+
+  .text-glow-gold {
+    filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.4));
+  }
+
+  .bg-cosmic-gradient {
+    background: radial-gradient(circle at center, var(--color-cosmic-blue) 0%, var(--color-deep-space) 100%);
+  }
+}
+
+/* Star particles background effect */
+.stars-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: twinkle var(--duration) infinite ease-in-out;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+}

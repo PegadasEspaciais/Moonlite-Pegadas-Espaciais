@@ -1,0 +1,30 @@
+import type {Metadata} from 'next';
+import { Cinzel, Montserrat } from 'next/font/google';
+import './globals.css';
+
+const cinzel = Cinzel({
+  subsets: ['latin'],
+  variable: '--font-cinzel',
+  weight: ['400', '700', '900'],
+});
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-montserrat',
+  weight: ['300', '400', '500', '600'],
+});
+
+export const metadata: Metadata = {
+  title: 'Pegadas Espaciais | Estética & Destino',
+  description: 'Onde a precisão da estética avançada encontra a clareza do destino. Por Marilene Augústa Sâmtós.',
+};
+
+export default function RootLayout({children}: {children: React.ReactNode}) {
+  return (
+    <html lang="pt-BR" className={`${cinzel.variable} ${montserrat.variable}`}>
+      <body suppressHydrationWarning className="bg-[#050505] text-[#E5E5E5] font-sans">
+        {children}
+      </body>
+    </html>
+  );
+}
