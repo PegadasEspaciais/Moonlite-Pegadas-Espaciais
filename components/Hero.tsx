@@ -32,7 +32,7 @@ export default function Hero() {
           <div className="inline-block px-4 py-1 border border-eternal-gold/30 rounded-full text-eternal-gold text-xs uppercase tracking-[0.2em] mb-6">
             ★ 20 Anos de Experiência Internacional ★
           </div>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-celestial-white leading-tight mb-6">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif text-celestial-white leading-tight mb-6">
             Onde a precisão da estética<span className="text-eternal-gold text-glow-gold">avançada encontra a clareza</span> do destino<span className="text-eternal-gold text-glow-gold"></span>.
           </h1>
           <p className="text-celestial-white/70 text-lg mb-10 max-w-xl leading-relaxed">
