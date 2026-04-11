@@ -14,13 +14,13 @@ export default function About() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-eternal-gold/30">
+            <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-eternal-gold/30 group transition-all duration-700 hover:border-eternal-gold/60 hover:shadow-[0_0_30px_rgba(212,175,55,0.2)]">
               <Image
-                src="https://drive.google.com/thumbnail?id=1TI6He8TG7A7hylQoV-8Ha1dHFXMp_AUg&sz=w1000"
+                src="https://drive.google.com/thumbnail?id=1yW8RCjlDZQEMiUpIFO3Yw2WnebwWqc96&sz=w1000"
                 alt="Marilene Augustta DDos Santos"
                 fill
                 unoptimized
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                className="object-cover transition-all duration-700 hover:scale-[1.03] hover:brightness-110"
                 referrerPolicy="no-referrer"
               />
             </div>
