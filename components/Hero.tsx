@@ -17,7 +17,7 @@ export default function Hero() {
         }}
       >
         <Image
-          src="/images/zodiac.jpg"
+          src="/images/zodiac.jpg?v=2"
           alt="Zodiac Background"
           fill
           unoptimized
