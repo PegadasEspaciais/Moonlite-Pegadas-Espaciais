@@ -17,7 +17,7 @@ export default function Hero() {
         }}
       >
         <Image
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          src="/media-final/zodiac.jpg?v=3"
           alt="Zodiac Background"
           fill
           unoptimized

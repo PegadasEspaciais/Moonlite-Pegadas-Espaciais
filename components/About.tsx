@@ -16,7 +16,7 @@ export default function About() {
           >
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-eternal-gold/30 group transition-all duration-700 hover:border-eternal-gold/60 hover:shadow-[0_0_30px_rgba(212,175,55,0.2)]">
               <Image
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                src="/media-final/marilene.jpg?v=3"
                 alt="Marilene Augustta DDos Santos"
                 fill
                 unoptimized
@@ -44,7 +44,7 @@ export default function About() {
               className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 md:left-auto md:right-[-20%] md:translate-x-0 w-[450px] h-[450px] md:w-[700px] md:h-[700px] pointer-events-none flex items-center justify-center z-0"
             >
               <Image
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                src="/media-final/nossa-senhora.png?v=3"
                 alt="Ethereal Background"
                 fill
                 unoptimized
