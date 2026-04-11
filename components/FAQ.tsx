@@ -26,7 +26,7 @@ const faqs = [
     answer: 'Para garantir a profundidade e a exclusividade de cada atendimento, Marilene limita o número de clientes mensais, dedicando tempo integral à análise e execução de cada protocolo.',
   },
   {
-    question: 'Qual é a experiência profissional da Marilene Augústa Sâmtós?',
+    question: 'Qual é a experiência profissional da Marilene Augustta DDos Santos?',
     answer: 'Marilene possui mais de 20 anos de experiência internacional, tendo atuado em grandes centros de estética e saúde na Europa e no Brasil, refinando técnicas que unem ciência e artes herméticas.',
   },
 ];
@@ -67,7 +67,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="py-24 relative">
+    <section id="faq" className="pt-24 pb-12 md:pb-24 relative">
       <div className="container mx-auto px-6 max-w-3xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl mb-4">Perguntas Frequentes</h2>

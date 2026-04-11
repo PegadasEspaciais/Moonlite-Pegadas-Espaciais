@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Menu, X } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,7 +35,9 @@ export default function Header() {
           animate={{ opacity: 1, x: 0 }}
           className="text-eternal-gold font-serif text-xl font-bold tracking-widest"
         >
-          PEGADAS ESPACIAIS
+          <Link href="/">
+            PEGADAS ESPACIAIS
+          </Link>
         </motion.div>
 
         {/* Desktop Nav */}

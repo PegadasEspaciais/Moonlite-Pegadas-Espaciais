@@ -1,6 +1,7 @@
 import type {Metadata} from 'next';
 import { Cinzel, Montserrat } from 'next/font/google';
 import './globals.css';
+import WhatsAppFloating from '@/components/WhatsAppFloating';
 
 const cinzel = Cinzel({
   subsets: ['latin'],
@@ -16,7 +17,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: 'Pegadas Espaciais | Estética & Destino',
-  description: 'Onde a precisão da estética avançada encontra a clareza do destino. Por Marilene Augústa Sâmtós.',
+  description: 'Onde a precisão da estética avançada encontra a clareza do destino. Por Marilene Augustta DDos Santos.',
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
@@ -24,6 +25,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
     <html lang="pt-BR" className={`${cinzel.variable} ${montserrat.variable}`}>
       <body suppressHydrationWarning className="bg-[#050505] text-[#E5E5E5] font-sans">
         {children}
+        <WhatsAppFloating />
       </body>
     </html>
   );

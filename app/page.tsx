@@ -6,6 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
 import StarsBackground from '@/components/StarsBackground';
+import CookieConsent from '@/components/CookieConsent';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <FAQ />
       <ContactForm />
       <Footer />
+      <CookieConsent />
     </main>
   );
 }

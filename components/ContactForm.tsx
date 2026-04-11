@@ -23,7 +23,7 @@ export default function ContactForm() {
     await new Promise((resolve) => setTimeout(resolve, 800));
 
     // Configuração do WhatsApp dinâmico conforme o plano
-    const phone = "5511999999999"; // Número da Marilene
+    const phone = "34649380087"; // Número da Marilene (Espanha)
     const message = `Olá Marilene, acabei de ver seu site e tenho interesse no serviço de ${formData.servico}. Meu nome é ${formData.nome}.`;
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${phone}?text=${encodedMessage}`;
@@ -33,7 +33,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contato" className="py-24 relative">
+    <section id="contato" className="pt-12 md:pt-24 pb-24 relative">
       <div className="container mx-auto px-6 max-w-4xl">
         <div className="text-center mb-16">
           <h2 className="text-eternal-gold font-serif text-xl tracking-[0.3em] mb-4 opacity-80 uppercase">Sua Nova Era</h2>
@@ -100,10 +100,9 @@ export default function ContactForm() {
               <button
                 disabled={isSubmitting}
                 type="submit"
-                className="w-full bg-eternal-gold text-deep-space py-4 rounded-lg font-bold uppercase tracking-widest hover:bg-eternal-gold/90 transition-all flex items-center justify-center space-x-3 disabled:opacity-50"
+                className="w-full text-center bg-eternal-gold text-deep-space py-4 rounded-lg font-bold uppercase tracking-widest hover:bg-eternal-gold/90 transition-all disabled:opacity-50"
               >
-                <span>{isSubmitting ? 'Processando...' : 'Reservar meu atendimento exclusivo'}</span>
-                {!isSubmitting && <Send size={18} />}
+                {isSubmitting ? 'Processando...' : 'Reservar meu atendimento exclusivo'}
               </button>
             </div>
           </form>

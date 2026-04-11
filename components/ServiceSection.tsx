@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'motion/react';
+import Image from 'next/image';
 import { Footprints, Sparkles, UserRound, Stars, Hash, LayoutGrid } from 'lucide-react';
 
 const physicalServices = [
@@ -72,7 +73,7 @@ function ServiceCard({ service }: { service: any }) {
 
 export default function ServiceSection() {
   return (
-    <section id="servicos" className="py-24 relative">
+    <section id="servicos" className="pt-12 pb-24 md:py-24 relative">
       <div className="container mx-auto px-6">
         {/* Physical Temple */}
         <div className="mb-24">
