@@ -13,13 +13,13 @@ export default function Footer() {
           </div>
 
           <div className="flex space-x-6 text-celestial-white/40">
-            <a href="#" className="hover:text-eternal-gold transition-all hover:scale-110" aria-label="Facebook">
+            <a href="https://www.facebook.com/profile.php?id=61573284037329" target="_blank" rel="noopener noreferrer" className="hover:text-eternal-gold transition-all hover:scale-110" aria-label="Facebook">
               <Facebook size={20} />
             </a>
-            <a href="#" className="hover:text-eternal-gold transition-all hover:scale-110" aria-label="Instagram">
+            <a href="https://www.instagram.com/pegadasespaciais/" target="_blank" rel="noopener noreferrer" className="hover:text-eternal-gold transition-all hover:scale-110" aria-label="Instagram">
               <Instagram size={20} />
             </a>
-            <a href="#" className="hover:text-eternal-gold transition-all hover:scale-110" aria-label="Youtube">
+            <a href="https://www.youtube.com/@pegadasespaciaisoficial" target="_blank" rel="noopener noreferrer" className="hover:text-eternal-gold transition-all hover:scale-110" aria-label="Youtube">
               <Youtube size={20} />
             </a>
           </div>

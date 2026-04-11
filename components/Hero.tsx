@@ -17,7 +17,7 @@ export default function Hero() {
         }}
       >
         <Image
-          src="https://drive.google.com/thumbnail?id=1pzru3gXNiz4Bv1jHVjeEw-ugSUmcw8p5&sz=w1000"
+          src="https://lh3.googleusercontent.com/d/1pzru3gXNiz4Bv1jHVjeEw-ugSUmcw8p5"
           alt="Zodiac Background"
           fill
           unoptimized
