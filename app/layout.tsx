@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: 'Pegadas Espaciais | Estética & Destino',
   description: 'Onde a precisão da estética avançada encontra a clareza do destino. Por Marilene Augustta DDos Santos.',
   icons: {
-    icon: '/assets/favicon.png',
+    icon: '/images/favicon.png',
   },
 };
 
