@@ -18,6 +18,9 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: 'Pegadas Espaciais | Estética & Destino',
   description: 'Onde a precisão da estética avançada encontra a clareza do destino. Por Marilene Augustta DDos Santos.',
+  icons: {
+    icon: 'https://drive.google.com/thumbnail?id=1Q2RdkiZu3DrcFS8xk5wQFgE8FWmVARCD&sz=w128',
+  },
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
