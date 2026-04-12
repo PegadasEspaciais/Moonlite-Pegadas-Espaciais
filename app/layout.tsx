@@ -27,8 +27,6 @@ export const metadata: Metadata = {
   },
 };
 
-export const runtime = 'edge';
-
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="pt-BR" className={`${cinzel.variable} ${montserrat.variable}`}>
