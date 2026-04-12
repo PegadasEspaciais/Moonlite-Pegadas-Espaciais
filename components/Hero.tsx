@@ -23,8 +23,8 @@ export default function Hero() {
           unoptimized
           className="object-contain mix-blend-screen opacity-30 md:opacity-50 brightness-110"
           style={{
-            WebkitMaskImage: 'radial-gradient(circle, black 30%, transparent 70%)',
-            maskImage: 'radial-gradient(circle, black 30%, transparent 70%)',
+            WebkitMaskImage: 'radial-gradient(circle, transparent 0%, transparent 2%, black 3%, black 30%, transparent 70%)',
+            maskImage: 'radial-gradient(circle, transparent 0%, transparent 2%, black 3%, black 30%, transparent 70%)',
           }}
           referrerPolicy="no-referrer"
         />
