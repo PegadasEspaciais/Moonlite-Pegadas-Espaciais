@@ -2,11 +2,3 @@ name = "moonlite-pegadas-espaciais"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = "out"
 compatibility_date = "2024-04-12"
-
-[[routes]]
-pattern = "pegadasespaciais.com"
-custom_domain = true
-
-[[routes]]
-pattern = "www.pegadasespaciais.com"
-custom_domain = true
