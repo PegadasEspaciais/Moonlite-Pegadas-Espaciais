@@ -17,7 +17,7 @@ export default function Hero() {
         }}
       >
         <Image
-          src="/media-final/zodiac.jpg?v=3"
+          src="/media-final/zodiac.jpg"
           alt="Zodiac Background"
           fill
           unoptimized
@@ -63,9 +63,10 @@ export default function Hero() {
           {/* Moon Mask for Image */}
           <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-eternal-gold/50 shadow-[0_0_50px_rgba(212,175,55,0.2)]">
             <Image
-              src="https://picsum.photos/seed/authority/800/800"
+              src="/media-final/marilene.jpg"
               alt="Marilene Augustta DDos Santos"
               fill
+              unoptimized
               className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
               referrerPolicy="no-referrer"
             />
