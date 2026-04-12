@@ -1,5 +1,6 @@
 import type {Metadata} from 'next';
 import { Cinzel, Montserrat } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 import WhatsAppFloating from '@/components/WhatsAppFloating';
 
@@ -26,12 +27,16 @@ export const metadata: Metadata = {
   },
 };
 
+export const runtime = 'edge';
+
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="pt-BR" className={`${cinzel.variable} ${montserrat.variable}`}>
       <head>
         {process.env.NEXT_PUBLIC_GTM_ID && (
-          <script
+          <Script
+            id="gtm-script"
+            strategy="afterInteractive"
             dangerouslySetInnerHTML={{
               __html: `
                 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
