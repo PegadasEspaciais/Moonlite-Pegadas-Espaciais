@@ -1,10 +1,13 @@
 /img/*
-  Cache-Control: no-cache, no-store, must-revalidate
+  Cache-Control: public, max-age=0, must-revalidate
   Access-Control-Allow-Origin: *
   Accept-Ranges: none
 
-/img/*.jpg
+/img/bg-zodiac.jpg
   Content-Type: image/jpeg
 
-/img/*.png
+/img/profile-marilene.jpg
+  Content-Type: image/jpeg
+
+/img/ethereal-spirit.png
   Content-Type: image/png

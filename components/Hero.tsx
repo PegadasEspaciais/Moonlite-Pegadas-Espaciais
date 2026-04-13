@@ -17,7 +17,7 @@ export default function Hero() {
         }}
       >
         <img
-          src="/img/zodiac.jpg"
+          src="/img/bg-zodiac.jpg"
           alt="Zodiac Background"
           className="w-full h-full object-contain mix-blend-screen opacity-30 md:opacity-50 brightness-110"
           style={{
@@ -32,7 +32,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center md:text-left"
+          className="text-center md:text-left max-w-2xl mx-auto md:mx-0"
         >
           <div className="inline-block px-3 md:px-4 py-1 border border-eternal-gold/30 rounded-full text-eternal-gold text-[9px] md:text-[10px] uppercase tracking-[0.1em] md:tracking-[0.2em] mb-6 whitespace-nowrap">
             ★ 20 Anos de Experiência Internacional ★
@@ -40,7 +40,7 @@ export default function Hero() {
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif text-celestial-white leading-tight mb-6">
             Onde a precisão da <span className="text-eternal-gold text-glow-gold">estética avançada</span> encontra a clareza do <span className="text-eternal-gold text-glow-gold">destino</span>.
           </h1>
-          <p className="text-celestial-white/70 text-base mb-10 max-w-xl leading-relaxed">
+          <p className="text-celestial-white/70 text-base mb-10 leading-relaxed">
             Marilene Augustta DDos Santos: lapidando a harmonia entre o corpo e o cosmos. Uma experiência exclusiva de cuidado físico e orientação mística com assinatura internacional.
           </p>
           <a
@@ -49,22 +49,6 @@ export default function Hero() {
           >
             Iniciar minha transformação
           </a>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.2 }}
-          className="relative aspect-square max-w-[500px] mx-auto"
-        >
-          {/* Moon Mask for Image */}
-          <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-eternal-gold/50 shadow-[0_0_50px_rgba(212,175,55,0.2)]">
-            <img
-              src="/img/marilene.jpg"
-              alt="Marilene Augustta DDos Santos"
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-            />
-          </div>
         </motion.div>
       </div>
     </section>
