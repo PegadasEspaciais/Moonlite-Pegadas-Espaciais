@@ -16,18 +16,11 @@ export default function Hero() {
           background: 'radial-gradient(circle, rgba(5, 5, 5, 0.6) 0%, rgba(5, 5, 5, 0) 70%)',
         }}
       >
-        <div 
-          className="w-full h-full opacity-30 md:opacity-50 brightness-110"
-          style={{
-            backgroundImage: 'url(/media/bg-zodiac.jpg?v=4.0)',
-            backgroundSize: 'contain',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            mixBlendMode: 'screen',
-            WebkitMaskImage: 'radial-gradient(circle, transparent 0%, transparent 2%, black 3%, black 30%, transparent 70%)',
-            maskImage: 'radial-gradient(circle, transparent 0%, transparent 2%, black 3%, black 30%, transparent 70%)',
-          }}
-          aria-label="Zodiac Background"
+        <img
+          src="/content/bg-zodiac.jpg?v=6.0"
+          alt="Zodiac Background"
+          className="w-full h-full object-contain opacity-40 md:opacity-60"
+          crossOrigin="anonymous"
         />
       </motion.div>
 
