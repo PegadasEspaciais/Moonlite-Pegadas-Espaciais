@@ -19,7 +19,6 @@ export default function About() {
                 src="/assets-v9/profile-marilene.jpg"
                 alt="Marilene Augustta DDos Santos"
                 className="w-full h-full object-cover transition-all duration-700 hover:scale-[1.03] hover:brightness-110"
-                crossOrigin="anonymous"
               />
             </div>
             {/* Decorative Elements */}

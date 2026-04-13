@@ -20,7 +20,6 @@ export default function Hero() {
           src="/assets-v9/bg-zodiac.jpg"
           alt="Zodiac Background"
           className="w-full h-full object-contain opacity-40 md:opacity-60"
-          crossOrigin="anonymous"
         />
       </motion.div>
 
