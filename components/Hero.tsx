@@ -71,8 +71,6 @@ export default function Hero() {
               referrerPolicy="no-referrer"
             />
           </div>
-          {/* Decorative Ring */}
-          <div className="absolute -inset-4 border border-eternal-gold/20 rounded-full animate-pulse" />
         </motion.div>
       </div>
     </section>
