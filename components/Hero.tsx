@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'motion/react';
-import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -11,17 +10,12 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.5 }}
         transition={{ duration: 1.5 }}
-        className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 md:left-auto md:translate-x-0 md:-right-20 lg:right-0 w-[336px] h-[336px] md:w-[560px] md:h-[560px] pointer-events-none flex items-center justify-center"
+        className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 md:left-auto md:translate-x-0 md:-right-20 lg:right-0 w-[336px] h-[336px] md:w-[560px] md:h-[560px] pointer-events-none flex items-center justify-center border border-eternal-gold/10 rounded-full"
         style={{
-          background: 'radial-gradient(circle, rgba(5, 5, 5, 0.6) 0%, rgba(5, 5, 5, 0) 70%)',
+          background: 'radial-gradient(circle, rgba(212, 175, 55, 0.05) 0%, rgba(5, 5, 5, 0) 70%)',
         }}
       >
-        <img
-          src="/fundo-zodiaco.jpg"
-          alt="Zodiac Background"
-          loading="eager"
-          className="w-full h-full object-contain opacity-40 md:opacity-60"
-        />
+        {/* Imagem removida para limpeza total */}
       </motion.div>
 
       <div className="container mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-12 items-center">

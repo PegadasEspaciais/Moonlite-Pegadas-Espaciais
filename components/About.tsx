@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'motion/react';
-import Image from 'next/image';
 
 export default function About() {
   return (
@@ -14,13 +13,8 @@ export default function About() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-eternal-gold/30 group transition-all duration-700 hover:border-eternal-gold/60 hover:shadow-[0_0_30px_rgba(212,175,55,0.2)]">
-              <img
-                src="/foto-marilene.jpg"
-                alt="Marilene Augustta DDos Santos"
-                loading="eager"
-                className="w-full h-full object-cover transition-all duration-700 hover:scale-[1.03] hover:brightness-110"
-              />
+            <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-eternal-gold/30 bg-deep-space flex items-center justify-center group transition-all duration-700 hover:border-eternal-gold/60 hover:shadow-[0_0_30px_rgba(212,175,55,0.2)]">
+              <div className="text-eternal-gold/20 text-6xl font-serif">M</div>
             </div>
             {/* Decorative Elements */}
             <div className="absolute -bottom-6 -right-6 w-32 h-32 border-b-2 border-r-2 border-eternal-gold/50" />
@@ -33,26 +27,7 @@ export default function About() {
             viewport={{ once: true }}
             className="relative"
           >
-            {/* Background Ethereal Image */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 0.35 }}
-              viewport={{ once: true }}
-              transition={{ duration: 2 }}
-              className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 md:left-auto md:right-[-20%] md:translate-x-0 w-[450px] h-[450px] md:w-[700px] md:h-[700px] pointer-events-none flex items-center justify-center z-0"
-            >
-              <img
-                src="/espirito-etereo.png"
-                alt="Ethereal Background"
-                loading="lazy"
-                className="w-full h-full object-contain mix-blend-screen opacity-40 brightness-110"
-                style={{
-                  WebkitMaskImage: 'radial-gradient(circle, black 30%, transparent 70%)',
-                  maskImage: 'radial-gradient(circle, black 30%, transparent 70%)',
-                }}
-                crossOrigin="anonymous"
-              />
-            </motion.div>
+            {/* Background Ethereal Image removida */}
 
             <div className="relative z-10">
               <h2 className="text-3xl md:text-5xl mb-8 leading-tight">
