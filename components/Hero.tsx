@@ -17,8 +17,9 @@ export default function Hero() {
         }}
       >
         <img
-          src="/conteudo-estatico/fundo-zodiaco.jpg"
+          src="/fundo-zodiaco.jpg"
           alt="Zodiac Background"
+          loading="eager"
           className="w-full h-full object-contain opacity-40 md:opacity-60"
         />
       </motion.div>
