@@ -17,7 +17,7 @@ export default function Hero() {
         }}
       >
         <img
-          src="/assets-v8/bg-zodiac.jpg"
+          src="/assets-v9/bg-zodiac.jpg"
           alt="Zodiac Background"
           className="w-full h-full object-contain opacity-40 md:opacity-60"
           crossOrigin="anonymous"
