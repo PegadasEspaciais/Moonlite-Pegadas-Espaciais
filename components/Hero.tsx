@@ -16,17 +16,14 @@ export default function Hero() {
           background: 'radial-gradient(circle, rgba(5, 5, 5, 0.6) 0%, rgba(5, 5, 5, 0) 70%)',
         }}
       >
-        <Image
-          src="/assets/zodiac.jpg?v=2.0"
+        <img
+          src="/img/zodiac.jpg"
           alt="Zodiac Background"
-          fill
-          unoptimized
-          className="object-contain mix-blend-screen opacity-30 md:opacity-50 brightness-110"
+          className="w-full h-full object-contain mix-blend-screen opacity-30 md:opacity-50 brightness-110"
           style={{
             WebkitMaskImage: 'radial-gradient(circle, transparent 0%, transparent 2%, black 3%, black 30%, transparent 70%)',
             maskImage: 'radial-gradient(circle, transparent 0%, transparent 2%, black 3%, black 30%, transparent 70%)',
           }}
-          referrerPolicy="no-referrer"
         />
       </motion.div>
 
@@ -62,13 +59,10 @@ export default function Hero() {
         >
           {/* Moon Mask for Image */}
           <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-eternal-gold/50 shadow-[0_0_50px_rgba(212,175,55,0.2)]">
-            <Image
-              src="/assets/marilene.jpg?v=2.0"
+            <img
+              src="/img/marilene.jpg"
               alt="Marilene Augustta DDos Santos"
-              fill
-              unoptimized
-              className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
-              referrerPolicy="no-referrer"
+              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
             />
           </div>
         </motion.div>

@@ -1,0 +1,10 @@
+/img/*
+  Cache-Control: no-cache, no-store, must-revalidate
+  Access-Control-Allow-Origin: *
+  Accept-Ranges: none
+
+/img/*.jpg
+  Content-Type: image/jpeg
+
+/img/*.png
+  Content-Type: image/png
