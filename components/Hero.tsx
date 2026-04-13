@@ -19,7 +19,7 @@ export default function Hero() {
         <div 
           className="w-full h-full opacity-30 md:opacity-50 brightness-110"
           style={{
-            backgroundImage: 'url(/img/bg-zodiac.jpg?v=3.1)',
+            backgroundImage: 'url(/media/bg-zodiac.jpg?v=4.0)',
             backgroundSize: 'contain',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',

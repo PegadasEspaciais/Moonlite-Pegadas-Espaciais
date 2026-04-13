@@ -1,0 +1,13 @@
+/media/*
+  Cache-Control: public, max-age=31536000, no-transform, immutable
+  X-Content-Type-Options: nosniff
+  Access-Control-Allow-Origin: *
+
+/media/bg-zodiac.jpg
+  Content-Type: image/jpeg
+
+/media/profile-marilene.jpg
+  Content-Type: image/jpeg
+
+/media/ethereal-spirit.png
+  Content-Type: image/png
