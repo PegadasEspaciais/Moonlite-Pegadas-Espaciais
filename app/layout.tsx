@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
-    <html lang="pt-BR" className={`${cinzel.variable} ${montserrat.variable}`}>
+    <html lang="pt-BR" className={`${cinzel.variable} ${montserrat.variable}`} suppressHydrationWarning>
       <head>
         {process.env.NEXT_PUBLIC_GTM_ID && (
           <Script
