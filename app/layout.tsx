@@ -17,6 +17,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.pegadasespaciais.com'),
   title: 'Pegadas Espaciais | Estética & Destino',
   description: 'Onde a precisão da estética avançada encontra a clareza do destino. Por Marilene Augustta DDos Santos.',
   icons: {

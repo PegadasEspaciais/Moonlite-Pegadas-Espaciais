@@ -14,7 +14,19 @@ export default function About() {
             className="relative"
           >
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-eternal-gold/30 bg-deep-space flex items-center justify-center group transition-all duration-700 hover:border-eternal-gold/60 hover:shadow-[0_0_30px_rgba(212,175,55,0.2)]">
-              <div className="text-eternal-gold/20 text-6xl font-serif">M</div>
+              {/* Celestial Mirror Effect */}
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(212,175,55,0.1)_0%,transparent_70%)]" />
+              <div className="relative z-10 flex flex-col items-center">
+                <div className="w-24 h-24 border border-eternal-gold/20 rounded-full flex items-center justify-center mb-4 relative">
+                  <motion.div 
+                    animate={{ rotate: 360 }}
+                    transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                    className="absolute inset-0 border border-dashed border-eternal-gold/40 rounded-full"
+                  />
+                  <span className="text-eternal-gold text-5xl font-serif">M</span>
+                </div>
+                <div className="text-eternal-gold/40 text-[10px] uppercase tracking-[0.3em]">Essência & Destino</div>
+              </div>
             </div>
             {/* Decorative Elements */}
             <div className="absolute -bottom-6 -right-6 w-32 h-32 border-b-2 border-r-2 border-eternal-gold/50" />
