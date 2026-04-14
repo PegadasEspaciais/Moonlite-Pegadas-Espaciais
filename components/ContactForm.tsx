@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
 import { Send } from 'lucide-react';
+import { supabase } from '@/lib/supabase';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -11,25 +12,44 @@ export default function ContactForm() {
     servico: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitStatus('idle');
 
-    // Simulação de salvamento local (já que o banco de dados foi declinado)
-    console.log('Lead capturado localmente:', formData);
+    try {
+      // 1. Salvar no Supabase
+      const { error } = await supabase
+        .from('leads')
+        .insert([
+          { 
+            nome: formData.nome, 
+            whatsapp: formData.whatsapp, 
+            servico: formData.servico 
+          }
+        ]);
 
-    // Pequeno delay para feedback visual de "processamento"
-    await new Promise((resolve) => setTimeout(resolve, 800));
+      if (error) {
+        console.error('Erro ao salvar no Supabase:', error);
+        // Mesmo com erro no banco, vamos tentar abrir o WhatsApp para não perder o cliente
+      }
 
-    // Configuração do WhatsApp dinâmico conforme o plano
-    const phone = "34649380087"; // Número da Marilene (Espanha)
-    const message = `Olá Marilene, acabei de ver seu site e tenho interesse no serviço de ${formData.servico}. Meu nome é ${formData.nome}.`;
-    const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/${phone}?text=${encodedMessage}`;
+      // 2. Configuração do WhatsApp dinâmico conforme o plano
+      const phone = "34649380087"; // Número da Marilene (Espanha)
+      const message = `Olá Marilene, acabei de ver seu site e tenho interesse no serviço de ${formData.servico}. Meu nome é ${formData.nome}.`;
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappUrl = `https://wa.me/${phone}?text=${encodedMessage}`;
 
-    window.open(whatsappUrl, '_blank');
-    setIsSubmitting(false);
+      setSubmitStatus('success');
+      window.open(whatsappUrl, '_blank');
+    } catch (err) {
+      console.error('Erro inesperado:', err);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -104,6 +124,13 @@ export default function ContactForm() {
               >
                 {isSubmitting ? 'Processando...' : 'Reservar meu atendimento exclusivo'}
               </button>
+              
+              {submitStatus === 'success' && (
+                <p className="text-green-400 text-center mt-4 text-sm">Dados capturados com sucesso! Redirecionando para o WhatsApp...</p>
+              )}
+              {submitStatus === 'error' && (
+                <p className="text-red-400 text-center mt-4 text-sm">Ocorreu um erro ao salvar seus dados, mas você ainda pode nos contatar pelo WhatsApp.</p>
+              )}
             </div>
           </form>
         </motion.div>

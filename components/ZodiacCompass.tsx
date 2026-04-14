@@ -71,8 +71,7 @@ export default function ZodiacCompass() {
           })}
         </motion.g>
 
-        {/* 4. A Bússola (ZodiacInner) - Ocultado temporariamente para isolamento */}
-        {/* 
+        {/* 4. A Bússola (ZodiacInner) */}
         <ZodiacInner 
           x="15" 
           y="15" 
@@ -80,7 +79,6 @@ export default function ZodiacCompass() {
           height="370" 
           className="text-[#D4AF37] drop-shadow-[0_0_15px_rgba(212,175,55,0.6)]" 
         />
-        */}
       </motion.svg>
     </div>
   );
