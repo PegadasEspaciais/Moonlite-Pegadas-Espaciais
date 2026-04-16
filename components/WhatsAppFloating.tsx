@@ -1,17 +1,27 @@
 'use client';
 
 import { motion } from 'motion/react';
+import { event } from '@/lib/gtm';
 
 export default function WhatsAppFloating() {
   const whatsappNumber = '34649380087';
   const message = encodeURIComponent('Olá! Gostaria de saber mais sobre os serviços da Pegadas Espaciais.');
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
 
+  const handleClick = () => {
+    event({
+      action: 'whatsapp_click',
+      category: 'conversion',
+      label: 'floating_button',
+    });
+  };
+
   return (
     <motion.a
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={handleClick}
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       whileHover={{ scale: 1.1 }}

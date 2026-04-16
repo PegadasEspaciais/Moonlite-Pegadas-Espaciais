@@ -2,16 +2,19 @@
 
 import { motion } from 'framer-motion';
 import ZodiacCompass from './ZodiacCompass';
+import { event } from '@/lib/gtm';
 
 export default function Hero() {
+  const handleCTAClick = () => {
+    event({
+      action: 'cta_click',
+      category: 'engagement',
+      label: 'hero_button',
+    });
+  };
+
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center pt-20 overflow-hidden">
-
-      {/* SVG BACKGROUND (MOBILE) */}
-      <div className="absolute inset-0 flex items-center justify-center md:hidden pointer-events-none">
-        <ZodiacCompass variant="background" />
-      </div>
-
       <div className="container mx-auto px-6 relative z-10 flex flex-col md:flex-row gap-12 items-center justify-between">
         
         {/* TEXTO */}
@@ -35,22 +38,21 @@ export default function Hero() {
 
           <a
             href="#contato"
+            onClick={handleCTAClick}
             className="inline-block w-full md:w-auto text-center bg-eternal-gold text-deep-space px-8 py-4 rounded-sm font-bold uppercase tracking-widest hover:bg-eternal-gold/90 transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(212,175,55,0.3)]"
           >
             Iniciar minha transformação
           </a>
         </motion.div>
 
-        {/* SVG (DESKTOP) */}
+        {/* SVG SPACE */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="relative z-10 hidden md:flex items-center justify-center flex-1"
+          className="relative z-10 flex items-center justify-center flex-1"
         >
-          <div className="w-[320px] h-[320px] md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px]">
-            <ZodiacCompass />
-          </div>
+          <ZodiacCompass />
         </motion.div>
 
       </div>

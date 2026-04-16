@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { motion } from 'motion/react';
 import { Send } from 'lucide-react';
 import { supabase } from '@/lib/supabase';
+import { event } from '@/lib/gtm';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -43,6 +44,11 @@ export default function ContactForm() {
       const whatsappUrl = `https://wa.me/${phone}?text=${encodedMessage}`;
 
       setSubmitStatus('success');
+      event({
+        action: 'form_submission',
+        category: 'conversion',
+        label: formData.servico,
+      });
       window.open(whatsappUrl, '_blank');
     } catch (err) {
       console.error('Erro inesperado:', err);

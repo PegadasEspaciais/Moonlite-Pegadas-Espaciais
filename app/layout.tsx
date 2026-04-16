@@ -1,8 +1,10 @@
 import type {Metadata} from 'next';
 import { Cinzel, Montserrat } from 'next/font/google';
+import { Suspense } from 'react';
 import Script from 'next/script';
 import './globals.css';
 import WhatsAppFloating from '@/components/WhatsAppFloating';
+import GTMTracker from '@/components/GTMTracker';
 
 const cinzel = Cinzel({
   subsets: ['latin'],
@@ -62,6 +64,9 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
             }}
           />
         )}
+        <Suspense fallback={null}>
+          <GTMTracker />
+        </Suspense>
         {children}
         <WhatsAppFloating />
       </body>
