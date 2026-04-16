@@ -30,10 +30,11 @@ export default function About() {
               {/* Efeito de Brilho de Fundo (sobre a imagem) */}
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(212,175,55,0.15)_0%,transparent_70%)] z-10 pointer-events-none" />
               
-              {/* A imagem REAL da Nossa Senhora */}
+              {/* A imagem REAL da Nossa Senhora via Link Externo */}
               <img
-                src="/images/nossa-senhora.jpg"
+                src="https://img.lightshot.app/3TJIm11XRN64gu-8uOAiXg.jpg"
                 alt="Nossa Senhora com o Menino Jesus"
+                referrerPolicy="no-referrer"
                 className="relative z-[5] w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 onError={(e) => {
                   // Fallback caso a imagem não carregue
