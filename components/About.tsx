@@ -33,7 +33,7 @@ export default function About() {
               {/* A imagem REAL da Nossa Senhora */}
               <img
                 src="/images/nossa-senhora.jpg"
-                alt="Nossa Senhora - Essência e Destino"
+                alt="Nossa Senhora com o Menino Jesus"
                 className="relative z-[5] w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 onError={(e) => {
                   // Fallback caso a imagem não carregue
