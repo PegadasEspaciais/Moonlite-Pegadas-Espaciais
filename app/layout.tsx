@@ -37,6 +37,19 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="pt-BR" className={`${cinzel.variable} ${montserrat.variable}`} suppressHydrationWarning>
       <head>
+        {/* Google Analytics (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-HG5546LG9T"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-HG5546LG9T');
+          `}
+        </Script>
         {process.env.NEXT_PUBLIC_GTM_ID && (
           <Script
             id="gtm-script"
