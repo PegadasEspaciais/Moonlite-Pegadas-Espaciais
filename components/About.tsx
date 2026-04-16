@@ -30,10 +30,10 @@ export default function About() {
               {/* Efeito de Brilho de Fundo (sobre a imagem) */}
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(212,175,55,0.15)_0%,transparent_70%)] z-10 pointer-events-none" />
               
-              {/* A imagem via Link Externo - Aguardando Nova URL */}
+              {/* A imagem via Link Externo - Nossa Senhora */}
               <img
-                src=""
-                alt="Imagem Marilene Augustta"
+                src="https://i.ibb.co/b5Tgnk6w/Nossa-senhora-com-o-Menino-Jesus.jpg"
+                alt="Marilene Augustta - Essência & Destino"
                 referrerPolicy="no-referrer"
                 className="relative z-[5] w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 onError={(e) => {
